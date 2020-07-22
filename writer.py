@@ -34,6 +34,11 @@ def print_news():
     return html
 
 
-with open("../danielcs88.github.io/cues/econ_news.html", "w") as file:
+#with open("../danielcs88.github.io/cues/econ_news.html", "w") as file:
+#    site = print_news()
+#    print(site, sep="\n", file=file)
+#
+
+with open("econ_news.html", "w") as file:
     site = print_news()
     print(site, sep="\n", file=file)
