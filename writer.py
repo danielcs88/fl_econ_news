@@ -20,11 +20,11 @@ def print_news():
 
         template = """
             <b>{0}</b><br/>
-            <p>{1}</p>
+            <p>{1} -> {2}</p>
             <br/>
             <p>
         """.format(
-            entry.get("title"), entry.get("description")
+            entry.get("title"), entry.get("description"), entry.get("published")[:25]
         )
 
         body += template
